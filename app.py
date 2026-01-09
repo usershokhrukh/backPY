@@ -7,3 +7,7 @@ def my_function():
     data = request.json # Konvertni ochib, ichidagi ma'lumotni olish
     print(data)         # Terminalda ko'rish
     return jsonify({"status": "olindi"})
+
+@app.route('/products', methods=['GET'])
+def get_function():
+    return "Mahsulot"
